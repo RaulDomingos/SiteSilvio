@@ -1,0 +1,54 @@
+.above-header {
+    margin-top: 9%;
+    width: 40%;
+    background-color: #ffb703;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 30px;
+}
+
+
+.saiba-mais {
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #8ecae6;
+    color: white;
+    padding: .8em;
+    font-size: 1.4em;
+    transition: .6s;
+    border-radius: 8px;
+}
+
+.saiba-mais:hover {
+    background-color: #219ebc;
+}
+
+/*SECTION 1*/
+
+.section1 {
+    background: black;
+    margin-top: 6%;
+    height: 100%;
+}
+
+.section1-content {
+    margin-top: 50px;
+}
+
+.workers {
+    width: 35%;
+    height: 35%;
+    margin-right: 50%;
+}
+
+.section1-text {
+    border: 8px solid white;
+    color: white;
+    margin-left: 24%;
+    margin-top: 1%;
+}
+
