@@ -30,25 +30,15 @@
 /*SECTION 1*/
 
 .section1 {
-    background: black;
+    background: #8ecae6;
     margin-top: 6%;
     height: 100%;
 }
 
-.section1-content {
-    margin-top: 50px;
-}
-
-.workers {
-    width: 35%;
-    height: 35%;
-    margin-right: 50%;
-}
-
-.section1-text {
-    border: 8px solid white;
+.section-text {
     color: white;
-    margin-left: 24%;
-    margin-top: 1%;
 }
+
+
+
 
