@@ -37,7 +37,78 @@
 
 .section-text {
     color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 1em;
 }
+
+/*Cards*/
+
+.imagem-card {
+    height: 150px;
+    width: 150px;
+}
+
+.card-white {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px;
+    background-color: #FFF;
+    color: #023047;
+}
+
+.card-black {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px;
+    background-color: #023047;
+    color: #FFF;
+}
+
+.card-text {
+    margin-left: 1em;
+}
+
+/*CONTATO*/
+
+.contato {
+    background-color: #ffb703;
+    color: #023047;
+    margin: 0;
+    padding: 0;
+}
+
+.h1-contato{
+    border-bottom: 4px solid #219ebc;
+}
+
+.input-form {
+    outline: none;
+    border: 2px solid transparent;
+    padding: 1%;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.input-form:focus {
+    border: 2px solid #219ebc;
+    color: #023047;
+}
+
+.button-form {
+    padding: 1%;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: #219ebc;
+    color: white;
+    transition: .5s;
+}
+
+.button-form:hover {
+    background-color: #023047;
+    border: 2px solid white;
+}
+
+
 
 
 
