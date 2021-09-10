@@ -29,7 +29,7 @@ function Home() {
       <div className="container-fluid d-flex justify-content-center align-items-center">
         <div className="above-header position-absolute">
           <h4 className="col-10 m-3">Soluções em Laudos e Vistorias Técnicas para a sua segurança.</h4>
-          <button className="saiba-mais m-3">Saiba Mais</button>
+          <a href="#cards"><button className="saiba-mais m-3">Saiba Mais</button></a>
         </div>
       </div>
 
@@ -50,7 +50,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="section-2 container-fluid mt-5">
+      <div id="cards" className="section-2 container-fluid mt-5">
         <h2 className="fw-bold text-center">Nossos Serviços</h2>
         <div className="cards container mt-5 d-flex flex-column align-items-center justify-content-around">
           {/*INÍCIO CARD*/}
