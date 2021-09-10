@@ -108,6 +108,105 @@
     border: 2px solid white;
 }
 
+.contatos-about-h3 {
+    color: #219ebc;
+}
+
+
+@media (max-width: 1024px) {
+    
+    .above-header {
+        width: 50%;
+        margin-top: 12%;
+    }
+
+    .sobre-silvio {
+        flex-flow: column nowrap !important;
+    }
+
+    .about-silvio {
+        text-align: center;
+    }
+
+    .contato {
+        flex-flow: column nowrap !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .above-header {
+        margin-top: 18%;
+        font-size: .8em;
+    }
+
+    .clientes {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media(max-width: 425px) {
+    .above-header h4 {
+        font-size: 1.6em;
+    }
+
+    .above-header {
+        width: 70%;
+        margin-top: 40%;
+    }
+
+    .section-text {
+        font-size: .8em !important;
+        width: 90% !important;
+    }
+
+    .img-silvio {
+        height: 330px !important;
+        width: 310px !important;
+    }
+
+    .card-black, .card-white {
+        flex-flow: column nowrap !important;
+        text-align: center;
+    }
+
+    .imagem-card {
+        width: 100%;
+        height: auto;
+        padding: 0 !important;
+        margin: 0 !important;
+        align-self: center !important;
+    }
+
+    .card-text {
+        margin: 0 !important;
+    }
+
+    .client-img {
+        width: 50% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .card-text {
+        width: 80%;
+    }
+
+    .input-form {
+        width: 100% !important;
+        font-size: .8em;
+        padding: 1em !important;
+    }
+
+    .button-form {
+        width: 80% !important;
+        font: .8em;
+    }
+}
 
 
 

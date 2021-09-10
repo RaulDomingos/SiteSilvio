@@ -6,3 +6,18 @@
     width: 45%;
     height: 25%;
 }
+
+
+@media(max-width: 768px) {
+    .logo {
+        width: 65%;
+        height: 45%;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        width: 85%;
+        height: 65%;
+    }
+}

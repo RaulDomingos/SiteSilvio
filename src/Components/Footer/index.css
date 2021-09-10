@@ -1,0 +1,5 @@
+@media(max-width: 425px) {
+    .footer {
+        font-size: .8em !important;
+    }
+}

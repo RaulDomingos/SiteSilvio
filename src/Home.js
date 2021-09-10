@@ -1,4 +1,5 @@
-import './Home.css';
+import './Home.css'; 
+import Footer from './Components/Footer';
 import Silvio from './img/silvio2.png';
 import Playground from './img/playground.png';
 import Exaustao from './img/exasutao.png';
@@ -8,7 +9,6 @@ import Ar from './img/arcondicionado.png';
 import Trator from './img/trator.png';
 import Judge from './img/judge.png';
 import Car from './img/car.jpg';
-import Fundo from './img/Fundo.jpg';
 import Header from './Components/Header/';
 import big from './img/big.jpeg';
 import bk from './img/bk.jpeg';
@@ -18,32 +18,30 @@ import medicos from './img/medicos.jpeg';
 import mrv from './img/mrv.jpeg';
 import nissei from './img/nissei.jpeg';
 import palladium from './img/plladium.jpeg';
-import renner from './img/renner.jpeg'
-import Sidenav from './Components/Sidenav/';
+import renner from './img/renner.jpeg';
+
 
 function Home() {
   return (
     <div>
       <Header />
 
-      <Sidenav />
-
       <div className="container-fluid d-flex justify-content-center align-items-center">
         <div className="above-header position-absolute">
-          <h3 className="col-10 m-3">Soluções em Laudos e Vistorias Técnicas para a sua segurança.</h3>
+          <h4 className="col-10 m-3">Soluções em Laudos e Vistorias Técnicas para a sua segurança.</h4>
           <button className="saiba-mais m-3">Saiba Mais</button>
         </div>
       </div>
 
       <div className="section1 container-fluid">
         <div className="container section1-content mt-5 p-5 d-flex align-items-center justify-content-around">
-          <div className="section-text position-relative mt-5 pt-5 col-8 text-center">
+          <div className="section-text position-relative mt-5 pt-5 col-xxl-8 col-md-12 text-center">
             <h2 className="col-12 mt-5 fw-bold">Uma empresa especializada em trazer segurança ao seu negócio.</h2>
             <p className="col-12 fs-5">A SD Engenharia possui expertise em laudos e vistorias para diversos seguimentos como: Playgrounds, Sistemas de Exaustão para Cozinhas Profissionais, Projetos de Ar condicionado e Planos de PMOC, NR-11, NR-12, Laudos para Máquinas Pesadas e Perícias Judiciais além de Responsabilidade técnica para empresas de Desmonte.</p>
           </div>
         </div>
         <div className="sobre-silvio container-fluid d-flex align-items-center justify-content-center">
-          <img className="img-fluid col-xxl-5 col-md-12 m-5" style={{height: '430px', width: '410px'}} src={Silvio} alt="Silvio M. Domingos" />
+          <img className="img-silvio col-xxl-5 col-md-12 m-5" style={{height: '430px', width: '410px'}} src={Silvio} alt="Silvio M. Domingos" />
           <div className="about-silvio col-xxl-5 col-md-12 m-5">
             <h2 className="col-12 fw-bold">Sobre Silvio M. Domingos, fundador da S.D Engenharia Mecânica:</h2>
             <p className="fs-5">Engenheiro Mecânico formado pela Universidade Tuiuti do Paraná e Ohio University – EUA. Atuo na elaboração de projetos de energias renováveis e sou um dos responsáveis pelo desenvolvimento de torre eólica para ambientes urbanos. </p>
@@ -141,7 +139,7 @@ function Home() {
       <div className="section-3 contianer-fluid mt-5">
         <div className="section3-content pt-3">
           <h1 className="fw-bold text-center fs-1 mt-3">Nossos Clientes</h1>
-          <div className="container">
+          <div className="container clientes">
             <img className="client-img col-2 m-5" alt="" src={big} />
             <img className="client-img col-2 m-5" alt="" src={bk} />
             <img className="client-img col-2 m-5" alt="" src={giraffas} />
@@ -159,16 +157,33 @@ function Home() {
         <div className="h1-contato container">
           <h1 className="text-center fw-bold pt-5">Contato</h1>
         </div>
-        <div className="container mt-5">
-          <form className="d-flex flex-column justify-content-around align-items-center">
-            <input className="input-form col-xl-8 col-md-10 m-3" type="text" placeholder="Nome" />
-            <input className="input-form col-xl-8 col-md-10 m-3" type="text" placeholder="Email" />
-            <input className="input-form col-xl-8 col-md-10 m-3" type="num" placeholder="Telefone" />
-            <textarea className="input-form col-xl-8 col-md-10 m-3 p-4" type="text" placeholder="Sua Mensagem" />
-            <button className="button-form col-2 m-3" type="submit">Enviar Mensagem</button>
+        <div className="container contato mt-5 d-flex justify-content-around align-items-center">
+          <form className="col-xxl-6 col-xl-12 col-md-12 d-flex flex-column justify-content-around align-items-center">
+            <span className="text-center fs-3 fw-bold">Fale conosco!</span>
+            <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Nome" />
+            <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Email" />
+            <input className="input-form col-xxl-12 col-md-12 m-2" type="num" placeholder="Telefone" />
+            <textarea className="input-form col-xxl-12 col-md-12 m-2 p-2" type="text" placeholder="Sua Mensagem" />
+            <button className="button-form col-6 m-3" type="submit">Enviar Mensagem</button>
           </form>
+          <div className="contatos-about col-xxl-6 col-xl-12 col-md-12 d-flex flex-column justify-content-around align-items-center">
+            <div className="m-5">
+              <h3 className="contatos-about-h3 fw-bold text-center">Endereço Sede:</h3>
+              <p className="fw-bold text-center">Rua Estevão Bayão 200 apto 901 - Batel, Curitiba PR</p>
+            </div>
+            <div className="m-5">
+              <h3 className="contatos-about-h3 fw-bold text-center">Endereço Filial</h3>
+              <p className="fw-bold text-center">Av. Gal Meira 1688 - Jd. Eldorado  Foz do Iguaçu - PR</p>
+            </div>
+            <div className="m-5">
+              <h3 className="contatos-about-h3 fw-bold text-center">Telefone</h3>
+              <p className="fw-bold text-center">(41) 99685 6068</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <Footer />
 
     </div>
   );
