@@ -19,9 +19,24 @@ import mrv from './img/mrv.jpeg';
 import nissei from './img/nissei.jpeg';
 import palladium from './img/plladium.jpeg';
 import renner from './img/renner.jpeg';
+import emailjs from 'emailjs-com'
 
 
 function Home() {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('SDengnharia', 'template_d36ba9b', e.target, 'user_y0bk5ZWEaqT2MvKeAAqzs')
+      .then((result) => {
+          alert("Mensagem Enviada com Sucesso!");
+      }, (error) => {
+          alert("Falha ao enviar a mensagem.");
+      });
+      e.target.reset();
+  }
+
+
   return (
     <div>
       <Header />
@@ -158,13 +173,13 @@ function Home() {
           <h1 className="text-center fw-bold pt-5">Contato</h1>
         </div>
         <div className="container contato mt-5 d-flex justify-content-around align-items-center">
-          <form className="col-xxl-6 col-xl-12 col-md-12 d-flex flex-column justify-content-around align-items-center">
+          <form className="col-xxl-6 col-xl-12 col-md-12 d-flex flex-column justify-content-around align-items-center" onSubmit={sendEmail}>
             <span className="text-center fs-3 fw-bold">Fale conosco!</span>
-            <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Nome" />
-            <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Email" />
-            <input className="input-form col-xxl-12 col-md-12 m-2" type="num" placeholder="Telefone" />
-            <textarea className="input-form col-xxl-12 col-md-12 m-2 p-2" type="text" placeholder="Sua Mensagem" />
-            <button className="button-form col-6 m-3" type="submit">Enviar Mensagem</button>
+            <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Nome" name="nome" />
+            <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Email" name="email" />
+            <input className="input-form col-xxl-12 col-md-12 m-2" type="num" placeholder="Telefone" name="telefone" />
+            <textarea className="input-form col-xxl-12 col-md-12 m-2 p-2" type="text" placeholder="Sua Mensagem" name="mensagem" />
+            <button className="button-form col-6 m-3" type="submit" value="Send">Enviar Mensagem</button>
           </form>
           <div className="contatos-about col-xxl-6 col-xl-12 col-md-12 d-flex flex-column justify-content-around align-items-center">
             <div className="m-5">
