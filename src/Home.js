@@ -19,7 +19,8 @@ import mrv from './img/mrv.jpeg';
 import nissei from './img/nissei.jpeg';
 import palladium from './img/plladium.jpeg';
 import renner from './img/renner.jpeg';
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
+import {FaWhatsapp} from 'react-icons/fa';
 
 
 function Home() {
@@ -174,7 +175,7 @@ function Home() {
         </div>
         <div className="container contato mt-5 d-flex justify-content-around align-items-center">
           <form className="col-xxl-6 col-xl-12 col-md-12 d-flex flex-column justify-content-around align-items-center" onSubmit={sendEmail}>
-            <span className="text-center fs-3 fw-bold">Fale conosco!</span>
+            <span className="text-center fs-3 fw-bold">Fale conosco</span>
             <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Nome" name="nome" />
             <input className="input-form col-xxl-12 col-md-12 m-2" type="text" placeholder="Email" name="email" />
             <input className="input-form col-xxl-12 col-md-12 m-2" type="num" placeholder="Telefone" name="telefone" />
@@ -196,6 +197,12 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="position-fixed bottom-0 end-0">
+        <a href="https://api.whatsapp.com/send?phone=5541996856068">
+          <button className="button-whatsapp fs-5"><FaWhatsapp size={30} /> Fale conosco!</button>
+        </a>
       </div>
 
       <Footer />

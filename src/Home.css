@@ -112,6 +112,21 @@
     color: #219ebc;
 }
 
+.button-whatsapp {
+    color: white;
+    background: #00bfa5;
+    padding: .6em;
+    border: none;
+    outline: none;
+    margin: 1em;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.button-whatsapp:hover {
+    padding: .8em;
+}
+
 
 @media (max-width: 1024px) {
     
@@ -145,6 +160,20 @@
         flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .button-whatsapp {
+        color: white;
+        background: #00bfa5;
+        padding: .4em;
+        border: none;
+        outline: none;
+        margin: .8em;
+        border-radius: 15px;
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 
